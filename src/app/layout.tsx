@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Red_Hat_Display } from 'next/font/google'
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -12,6 +14,12 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const redHatDisplay = Red_Hat_Display({
+  subsets:["latin"],
+  variable:"--font-red-hat",
+  weight:["300","400","500","600","700","800","900"]
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${redHatDisplay.variable} antialiased`}
       >
         {children}
       </body>
