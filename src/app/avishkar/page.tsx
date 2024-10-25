@@ -1,7 +1,60 @@
+'use client'
+
 import CalenderCard from '@/components/calender-card'
 import React from 'react'
 
 const page = () => {
+
+    const events = [
+        {
+            day: "25",
+            month: "October",
+            weekday: "Friday",
+            eventName: "Aavishkar Inaguration",
+            location: "Seminar Hall",
+            time: "10:00 AM",
+        },
+        {
+            day: "25",
+            month: "October",
+            weekday: "Friday",
+            eventName: "21 ways to stay alive in Crypto",
+            location: "-",
+            time: "11:00 AM",
+        },
+        {
+            day: "25",
+            month: "October",
+            weekday: "Friday",
+            eventName: "Web3 Workshop",
+            location: "-",
+            time: "02:00 PM",
+        },
+        {
+            day: "25",
+            month: "October",
+            weekday: "Friday",
+            eventName: "Typathon",
+            location: "IT211",
+            time: "02:30 PM",
+        },
+        {
+            day: "25",
+            month: "October",
+            weekday: "Friday",
+            eventName: "Figma faceoff",
+            location: "IT213",
+            time: "02:30 PM",
+        },
+        {
+            day: "25",
+            month: "October",
+            weekday: "Friday",
+            eventName: "Best or Bust",
+            location: "IT234",
+            time: "02:30 PM",
+        },
+    ];
     return (
         <div>
             <div className="px-7 py-28 lg:px-36">
@@ -22,14 +75,10 @@ const page = () => {
             </div>
 
 
-
-            <div className="px-7 pb-28 lg:px-36 flex flex-col">
-                <CalenderCard />
-                <CalenderCard />
-                <CalenderCard />
-                <CalenderCard />
-                <CalenderCard />
-                <CalenderCard />
+            <div className="px-7 pb-28 lg:px-36">
+                {events.map((event, index) => (
+                    <CalenderCard key={index} {...event} />
+                ))}
             </div>
         </div>
     )

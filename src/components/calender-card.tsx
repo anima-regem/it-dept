@@ -1,14 +1,14 @@
 import { MapPin, Clock } from 'lucide-react'
 import React from 'react'
 
-const CalenderCard = ({ 
+const CalenderCard = ({
   day = "31",
   month = "July",
   weekday = "Thursday",
   eventName = "Web3 Workshop",
   location = "IT211",
   time = "12:00 PM",
-  onViewMore = () => {} 
+  onViewMore = () => { }
 }) => {
   return (
     <div>
@@ -34,7 +34,7 @@ const CalenderCard = ({
         </div>
 
         <div className='flex flex-col justify-between lg:items-center lg:flex-1 lg:justify-around lg:flex-row-reverse'>
-          <button 
+          <button
             onClick={onViewMore}
             className='text-[#1B80C4] border border-[#1B80C4] px-6 py-3 hover:bg-[#1B80C4] hover:text-white transition-colors'
           >
@@ -49,7 +49,7 @@ const CalenderCard = ({
           </div>
         </div>
       </div>
-      <div className='w-full h-[0.5px] bg-black'/>
+      <div className='w-full h-[0.5px] bg-black' />
     </div>
   )
 }
