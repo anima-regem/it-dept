@@ -29,7 +29,7 @@ export const faculties: FacultyProps[] = [
             {
                 name:"Dr. SANGEETHA UNNIKRISHNAN",
                 email:"sangeethau2013@gmail.com",
-                image:"https://gecskp.etlab.in/images/default-user.png"
+                image:"/images/faculty/sangeetha.jpg"
             }
         ]
     },
@@ -69,7 +69,7 @@ export const faculties: FacultyProps[] = [
             {
                 name:"Mr. VINAYA CHANDRAN K K",
                 email:"vinayachandran.k.k@gmail.com",
-                image:"https://gecskp.etlab.in/images/default-user.png"
+                image:"/images/faculty/vinayan.jpg"
             },
             {
                 name:"Dr. RANI M R",
@@ -84,7 +84,7 @@ export const faculties: FacultyProps[] = [
             {
                 name:"Dr. SAJITHA M",
                 email:"	sajitham@gecskp.ac.in",
-                image:"https://gecskp.etlab.in/images/default-user.png"
+                image:"/images/faculty/sajitha.jpg"
             },
             {
                 name:"Ms. SASINAS ALIAS HARITHA Z A",
