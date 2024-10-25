@@ -113,11 +113,11 @@ export const faculties: FacultyProps[] = [
     {
         title:"Non-Teaching Staff",
         faculties:[
-            // {
-            //     name:"Ajith Antony",
-            //     email:"alkumargpt@gmail.com",
-            //     image:"https://gecskp.etlab.in/images/default-user.png"
-            // },
+            {
+                name:"Ajith Antony",
+                email:"ajith@gecskp.ac.in",
+                image:"/images/faculty/Ajith.jpg"
+            },
             {
                 name:"ANILKUMAR PC",
                 email:"anilkumargpt@gmail.com",
