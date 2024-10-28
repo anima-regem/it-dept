@@ -10,6 +10,7 @@ const navLinks = [
     { name: "Events", href: "/events" },
     { name: "Gallery", href: "/gallery" },
     { name: "Faculty", href: "/faculty" },
+    { name: "EZLab", href: "https://ezlab.vercel.app/gecskp/dashboard"}
 ];
 
 const moreLinks = [
